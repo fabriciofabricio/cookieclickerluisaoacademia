@@ -1,0 +1,24 @@
+{
+  "name": "shape-e-coracao-gym-tycoon-3d",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SHAPE & CORAÇÃO: Gym Tycoon 3D — clicker/tycoon 3D em Three.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/copy-decoders.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "balance": "node tools/balance/tune.mjs . 4",
+    "balance:valor": "node tools/balance/value.mjs .",
+    "balance:empregos": "node tools/balance/jobs.mjs . 4 5 4",
+    "teste": "node tools/balance/smoke.mjs . && node tools/balance/test_energy.mjs . && node tools/balance/test_uber.mjs . && node tools/balance/test_iron.mjs .",
+    "balance:iron": "node tools/balance/iron.mjs . 4"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
